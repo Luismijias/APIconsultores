@@ -11,7 +11,7 @@ server.get('/', (req,res) => {
         indiceVendedor = 0;
       }
       const nomeVendedora = vendedoras[indiceVendedor];
-    return res.json({"var_consultor": nomeVendedora})
+    return res.json({body:{"var_consultor": nomeVendedora}})
 });
 
 
