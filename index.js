@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000
 const vendedoras = ["Ana", "Elizeth", "Luisa", "Carla", "Antonia"];
 let indiceVendedor = -1;
 
-server.get('/consultor', (req,res) => {
+server.get('/', (req,res) => {
     indiceVendedor++;
     if (indiceVendedor >= vendedoras.length) {
         indiceVendedor = 0;
